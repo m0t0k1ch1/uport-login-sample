@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="./index.css" rel="stylesheet">
+    <title>uPort verifier sample</title>
+  </head>
+  <body class="text-center">
+    <div id="app">
+      <div>
+        <template v-if="user != null">
+          <p><strong>name:</strong> {{ user.name }}</p>
+          <button type="button" class="btn btn-secondary" v-on:click="logout">Logout</button>
+        </template>
+        <template v-else>
+          <button type="button" class="btn btn-primary" v-on:click="login">Login with uPort</button>
+        </template>
+      </div>
+    </div>
+    <script src="./src/index.js" charset="utf-8"></script>
+  </body>
+</html>
