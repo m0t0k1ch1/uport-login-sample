@@ -1,7 +1,6 @@
 import 'babel-polyfill'
-import { Connect, SimpleSigner } from 'uport-connect'
-
 import Vue from 'vue/dist/vue.esm.js'
+import { Connect } from 'uport-connect'
 
 const uport = new Connect('MyDApp')
 
