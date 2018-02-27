@@ -12,15 +12,15 @@ new Vue({
   methods: {
     login: function() {
       var app = this
-      uport.requestCredentials().catch((e) => {
+      uport.requestCredentials().then((credentials) => {
+        if (credentials != null) {
+          app.user = credentials
+        }
+      }).catch((e) => {
         if (e.message === 'Request Cancelled') {
           console.log(e.message)
         } else {
           throw e
-        }
-      }).then((credentials) => {
-        if (credentials != null) {
-          app.user = credentials
         }
       })
     },
