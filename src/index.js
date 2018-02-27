@@ -19,7 +19,8 @@ new Vue({
       }).catch((e) => {
         if (e.message === 'Request Cancelled') {
           console.log(e.message)
-        } else {
+        }
+        else {
           throw e
         }
       })
