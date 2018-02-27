@@ -1,6 +1,6 @@
 # uport-login-sample
 
-a sample application for [uPort](https://www.uport.me) login built with [Vue.js](https://github.com/vuejs/vue)
+a sample application for testing [uPort](https://www.uport.me) login built with [Vue.js](https://github.com/vuejs/vue)
 
 ## Run
 
