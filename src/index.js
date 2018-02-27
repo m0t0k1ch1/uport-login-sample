@@ -11,7 +11,7 @@ new Vue({
   },
   methods: {
     login: function() {
-      var app = this
+      let app = this
       uport.requestCredentials()
         .then((credentials) => {
           if (credentials != null) {
